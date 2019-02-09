@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "app to find friends using express servers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmobley09/FriendFinder.git"
+  },
+  "author": "Joshua Mobley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmobley09/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/jmobley09/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
