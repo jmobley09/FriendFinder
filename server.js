@@ -12,6 +12,14 @@ var PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//Router
+// Points server to route files && how to respond when users visit or request data from various URLs
+//==============================================================
+
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
+
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
