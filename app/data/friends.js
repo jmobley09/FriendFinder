@@ -2,8 +2,8 @@
 
 var friendsarr = [
     {
-        "name":"Ahmed",
-        "photo":"https://www.gannett-cdn.com/-mm-/bf328da2ee0b2b24d8e75d3dfc734d51084f17c1/c=60-0-2341-1715/local/-/media/DetroitFreePress/DetroitFreePress/2014/11/08/635510562698110283-Dumb-and-Dumber-2.jpg?width=534&height=401&fit=crop",
+        "name":"Harry & Loyd",
+        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE99WKZj7aZL4KhUMU56-gs6jrEuQkvQre5hDZob8hjkLtZpH1",
         "scores":[
             5,
             1,
@@ -14,6 +14,38 @@ var friendsarr = [
             2,
             5,
             4,
+            1
+          ]
+      },
+      {
+        "name":"Zoidberg",
+        "photo":"https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/dr-john-zoidberg-the-simpsons-38.7.jpg",
+        "scores":[
+            1,
+            3,
+            2,
+            4,
+            4,
+            1,
+            5,
+            3,
+            1,
+            2
+          ]
+      },
+      {
+        "name":"Josh",
+        "photo":"http://cdn.collider.com/wp-content/uploads/paul-rudd1.jpg",
+        "scores":[
+            2,
+            5,
+            1,
+            1,
+            5,
+            2,
+            3,
+            3,
+            1,
             1
           ]
       }

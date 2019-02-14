@@ -174,41 +174,48 @@
                         .then(function (friendData) {
                             const scores = newFriend.scores;
 
-                            let totalDiff = 0;
+                            let totalDiff = 60;
                             let matchedFriend = {};
 
                             for (let i = 0; i < friendData.length; i++) {
 
                                 const currentFriend = friendData[i];
+                                console.log(currentFriend);
                                 const compareScore = friendData[i].scores;
 
                                 for (let i = 0; i < compareScore.length; i++) {
                                     let total = 0;
                                     let num = compareScore[i] - scores[i];
+                                    
                                     if (num < 0) {
                                         num = num * -1;
-                                        total += num;
+                                        total = total + num;
                                     } else {
-                                        total += num;
+                                        total = total + num;
                                     }
-
-                                    if (total > totalDiff) {
+                                    
+                                    if (total < totalDiff) {
                                         totalDiff = total;
                                         matchedFriend = currentFriend;
                                     }
                                 }
                             }
                             console.log(matchedFriend);
+                            console.log(totalDiff);
                             $('#modalBody').append(matchedFriend.name);
-                            
+
                             const modalimg = $('<img>');
                             modalimg.attr('src', matchedFriend.photo);
                             $('#modalBody').append(modalimg);
-                            
-                            $("#friendModal").modal()
+
+                            $("#friendModal").modal();
                         });
                 }
                 runFriendQuery();
+                function clearmodal() {
+                    $('#modalBody').text(' ');
+                };
+                clearmodal();
             });
     });
 </script>
